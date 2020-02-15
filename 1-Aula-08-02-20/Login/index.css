@@ -8,10 +8,12 @@ html {
 }
 
 body {
-    background: linear-gradient(to bottom, #F43292, #B035F8 );
+    background-image: url(https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: 100% 100%;
+    background-position: center;
     font-family: gotham, arial, helvetica, sans-serif;
-    font-size: 18px;
-    margin-top: 200px;
+    font-size: 1.1em;
+    margin-top: 15%;
 }
 
 div {
@@ -23,15 +25,22 @@ div {
 h1 {
     text-align: center;
     margin: 5px;
+    font-weight: lighter;
     color: white;
 }
 
 input {
-    border-radius: 50px;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 1px solid white;
     width: 40%;
     height: 40px;
     margin: 5px;
     padding: 15px;
+}
+
+input::placeholder {
+    color: white;   
 }
 
 button {
@@ -40,7 +49,8 @@ button {
     margin: 8px;
     border: none;
     border-radius: 20px;
-    background: linear-gradient(to right, deeppink, purple )
+    color: white;
+    background: linear-gradient(to bottom right, deeppink,deeppink, purple);
 }
 button:hover {
     color: darkgray;
@@ -50,10 +60,10 @@ button:hover {
 a {
     text-decoration: none;
     margin: 10px;
-    color: black;
+    color: white;
 }
 a:hover {
-    color: darkgray;
+    color: black;
 }
 
 .color {
