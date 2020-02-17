@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, deeppink, purple);
+}
+
+h1 {
+
+    text-align: center;
+    margin-top: 15%;
+}
+
+.display {
+    background: white;
+    border-radius: 8px;
+    border: 2px solid black;
+    height: 100px;
+    width: 100%;
+}
+input {
+    width: 50%;
+    margin: 35px auto 5px 32px;
+    border: none;
+    font-size: 20px;
+}
+h6 {
+    margin-left: 10px;
+}
+
+.container {
+    background: white;
+    border: 2px solid black;
+    margin: auto;
+    border-radius: 15px;
+    height: 300px;
+    width: 250px;
+}
+
+button {
+    width: 23.7%;
+    height: 38px;
+    margin: 0;
+}
+
+.button-especifico {
+    width: 49%;
+    height: 38px;
+}
+
+button:hover {
+    background: darkgray;
+}
+

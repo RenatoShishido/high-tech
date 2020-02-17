@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+     <h1>Calculadora JS</h1>
+    <div class="container">
+        <div class="display">
+            <input id="texto"></input>
+            <h6>HISTORICO</h6>
+        </div>         
+            <div>
+                <button class="button-especifico" id="C"  >C</button>
+                <button class="item" onclick="insert('%')" id="%">%</button>
+                <button class="item" onclick="insert('/')" id="/">/</button>
+            </div>
+            <div>
+                <button class="item" onclick="insert(7)" id="7">7</button>
+                <button class="item" onclick="insert(8)" id="8">8</button>
+                <button class="item" onclick="insert(9)" id="9">9</button>
+                <button class="item" onclick="insert('X')" id="X">X</button>
+            </div>
+            <div>
+                <button class="item" onclick="insert(4)" id="4" >4</button>
+                <button class="item" onclick="insert(5)" id="5">5</button>
+                <button class="item" onclick="insert(6)" id="6">6</button>
+                <button class="item" onclick="insert('-')" id="-">-</button>
+            </div>
+            <div>
+                <button class="item" onclick="insert(1)"id="1">1</button>
+                <button class="item" onclick="insert(2)"id="2">2</button>
+                <button class="item" onclick="insert(3)"id="3">3</button>
+                <button class="item" onclick="insert('+')"id="+">+</button>
+            </div>
+            <div>
+                <button class="button-especifico" onclick="insert(0)" id="0" >0</button>
+                <button class="item" onclick="insert('.')" id=".">.</button>
+                <button class="item" onclick="insert('=')" id="=">=</button>
+            </div>
+    </div>
+
+
+<script src="index.js"></script>
+
+
+</body>
+</html>
