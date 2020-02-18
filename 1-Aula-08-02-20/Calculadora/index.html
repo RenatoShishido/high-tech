@@ -10,36 +10,41 @@
      <h1>Calculadora JS</h1>
     <div class="container">
         <div class="display">
-            <input id="texto"></input>
+            <form action="" name="calc">
+            <input id="texto" name="visor" class="calculadora" value="0"></input>
+            </form>
             <h6>HISTORICO</h6>
+            <form action=""  name="hist">
+            <input class="historico" type="text" name="historico" id="historico" > 
+            </form>
         </div>         
             <div>
                 <button class="button-especifico" id="C"  >C</button>
-                <button class="item" onclick="insert('%')" id="%">%</button>
-                <button class="item" onclick="insert('/')" id="/">/</button>
+                <button class="item" onclick="insert('%')"  value="%" id="%">%</button>
+                <button class="item" onclick="insert('/')" value="/" id="/">/</button>
             </div>
             <div>
-                <button class="item" onclick="insert(7)" id="7">7</button>
-                <button class="item" onclick="insert(8)" id="8">8</button>
-                <button class="item" onclick="insert(9)" id="9">9</button>
-                <button class="item" onclick="insert('X')" id="X">X</button>
+                <button class="item" onclick="insert(7)" value="7" id="7">7</button>
+                <button class="item" onclick="insert(8)" value="8" id="8">8</button>
+                <button class="item" onclick="insert(9)" value="9" id="9">9</button>
+                <button class="item" onclick="insert('X')" value="X" id="X">X</button>
             </div>
             <div>
-                <button class="item" onclick="insert(4)" id="4" >4</button>
-                <button class="item" onclick="insert(5)" id="5">5</button>
-                <button class="item" onclick="insert(6)" id="6">6</button>
-                <button class="item" onclick="insert('-')" id="-">-</button>
+                <button class="item" onclick="insert(4)" value="4" id="4" >4</button>
+                <button class="item" onclick="insert(5)" value="5" id="5">5</button>
+                <button class="item" onclick="insert(6)" value="6" id="6">6</button>
+                <button class="item" onclick="insert('-')" value="-" id="-">-</button>
             </div>
             <div>
-                <button class="item" onclick="insert(1)"id="1">1</button>
-                <button class="item" onclick="insert(2)"id="2">2</button>
-                <button class="item" onclick="insert(3)"id="3">3</button>
-                <button class="item" onclick="insert('+')"id="+">+</button>
+                <button class="item" onclick="insert(1)" value="1" id="1">1</button>
+                <button class="item" onclick="insert(2)" value="2" id="2">2</button>
+                <button class="item" onclick="insert(3)" value="3" id="3">3</button>
+                <button class="item" onclick="insert('+')" value="+" id="+">+</button>
             </div>
             <div>
-                <button class="button-especifico" onclick="insert(0)" id="0" >0</button>
-                <button class="item" onclick="insert('.')" id=".">.</button>
-                <button class="item" onclick="insert('=')" id="=">=</button>
+                <button class="button-especifico" onclick="insert(0)" value="0" id="0" >0</button>
+                <button class="item" onclick="insert('.')" value="." id=".">.</button>
+                <button class="item" onclick="insert('=')" value="=" id="=">=</button>
             </div>
     </div>
 
