@@ -36,32 +36,39 @@ function insert(num) {
     }else if(num === '+'){
         pegavalor();
         array.push('+');
-    }else if( num === '='){
+    }else if(num == '%'){
+        pegavalor();
+        array.push('%');
+    }
+    else if( num === '='){
         const valor = document.calc.visor.value;
         array.push(valor);
         Historico();
             if(array[1] === '+'){
-                let total = parseInt(array[0]) + parseInt(array[2]);
+                let total = parseFloat(array[0]) + parseFloat(array[2]);
                 document.getElementById('texto').value = total
                 array = [];
                 
                 console.log(array);
             }else if(array[1] === 'X'){
-                let total = parseInt(array[0]) * parseInt(array[2]);
+                let total = parseFloat(array[0]) * parseFloat(array[2]);
                 document.getElementById('texto').value = total
                 array = [];
                
             }else if(array[1] === '-'){
-                let total = parseInt(array[0]) - parseInt(array[2]);
+                let total = parseFloat(array[0]) - parseFloat(array[2]);
                 document.getElementById('texto').value = total
                 array = [];
                 array.push(total);
                
             }else if(array[1] === '/'){
-                let total = parseInt(array[0]) / parseInt(array[2]);
+                let total = parseFloat(array[0]) / parseFloat(array[2]);
                 document.getElementById('texto').value = total
                 array = [];
-               
+            }else if(array[1] === '%'){
+                let total = (parseFloat(array[0]) * parseFloat(array[2])) / 100;
+                document.getElementById('texto').value = total
+                array = [];
             }
     }
     else{
