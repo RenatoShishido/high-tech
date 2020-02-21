@@ -9,6 +9,7 @@ function Historico(valor){
     document.hist.historico.value = valor;
 }
 var contador = 0
+var contador2 = 0
 function insert(num) {
     var saldo = document.calc.visor.value;
     document.calc.visor.value = saldo + num;
@@ -20,7 +21,10 @@ function insert(num) {
             document.calc.visor.value = saldo + ')';
             contador = 0
             console.log(contador + 'ola')
-        } 
+        }
+    }
+    else if(num === '+/-'){
+        document.calc.visor.value = saldo + '(-';
     }
     if(num === '='){
         Clear()
