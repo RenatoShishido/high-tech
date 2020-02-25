@@ -52,7 +52,7 @@ nav {
    
 }
 img {
-    background-size: 100%;
+    background-size: 100% 100%;
     background-position: center;
     width: 100%;
     border-radius: 15px;
@@ -64,7 +64,7 @@ img {
 figure {
     background: white;
     border-radius: 15px;
-    margin: 10% 5% 10% 5%;
+    margin: 10px 5% 10px 5%;
 }
 .item-anuncio {
     color: darkgrey;
@@ -82,5 +82,21 @@ footer {
     background: blue;
     width: 100%;
     height: 10%;
+}
+
+
+@media ( min-width: 950px ) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+    }
+    figure {
+        background: white;
+        border-radius: 15px;
+        margin: 10px auto 10px auto;
+    }
+
 }
 
