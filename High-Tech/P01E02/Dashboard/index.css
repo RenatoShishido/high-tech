@@ -9,7 +9,6 @@ body {
     background: #D8BFD8;
 }
 
-
 h1 {
     margin: 100px 0px 50px 80px;
     font-weight: lighter;
@@ -20,6 +19,7 @@ h2 {
     font-weight: lighter;
     color: darkgray;
 }
+
 p {
     font-size: 18px;
     font-weight: lighter;
@@ -29,10 +29,10 @@ p {
 }
 
 .container {
-    display: flex;    
+    display: flex;
 }
 
-.container-box-1 { 
+.container-box-1 {
     margin: 0px 0px 70px 140px;
     border: 1px solid white;
     border-radius: 15px;
@@ -40,6 +40,7 @@ p {
     width: 20%;
     height: 120px;
 }
+
 .container-box-2 {
     margin: 0px 0px 10px 30px;
     border: 1px solid white;
@@ -48,6 +49,7 @@ p {
     width: 20%;
     height: 120px;
 }
+
 .container-box-3 {
     margin: 0px 0px 10px 30px;
     border: 1px solid white;
@@ -56,6 +58,7 @@ p {
     width: 20%;
     height: 120px;
 }
+
 .container-box-comentarios {
     margin: 0px 0px 70px 140px;
     border: 1px solid blue;
@@ -78,7 +81,6 @@ p {
 .font-container-title {
     font-weight: lighter;
     margin: 10px 0px 10px 15px;
-
 }
 
 .font-container-porcentagem-positivo {
@@ -94,21 +96,23 @@ p {
     font-weight: bold;
     color: red;
 }
+
 .container-texto {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .font-container-numero {
-    font-size: 40px;
+    font-size: 2em;
     color: black;
     font-weight: bold;
     margin: 10px 0px 10px 15px;
 }
-.box-shadow {
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
-}
 
+.box-shadow {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
 
 @media only screen and (max-width: 500px) {
     .container {

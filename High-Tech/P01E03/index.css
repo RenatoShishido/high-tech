@@ -3,14 +3,9 @@
     box-sizing: border-box;
 }
 
-html {
-    height: 100%;
-}
-
 body {
     background: rgb(232, 232, 232);
-    font-family:'Raleway', sans-serif;
-    height: 100%;
+    font-family: 'Raleway', sans-serif;
 }
 
 nav {
@@ -18,16 +13,18 @@ nav {
     justify-content: space-between;
     background: blue;
     width: 100%;
-    height: 10%;
+    height: 100px;
     font-size: 15px;
     font-weight: 100;
 }
+
 .item {
     flex-grow: 1;
     margin: 5% 0 5% 7%;
     align-self: center;
     color: white;
 }
+
 .item2 {
     flex-grow: 1;
     margin: 5% 5% 5% 0;
@@ -36,6 +33,7 @@ nav {
     align-self: center;
     color: white;
 }
+
 .item3 {
     margin: 5% 5% 5% 0;
     text-align: end;
@@ -46,32 +44,35 @@ nav {
 
 .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80%;
-   
+    height: 600px;
 }
+
 img {
-    background-size: 100% 100%;
+    background-size: 100%;
     background-position: center;
     width: 100%;
     border-radius: 15px;
+    height: 70%;
 }
-.container-anuncio{
+
+.container-anuncio {
     margin-left: 15px;
     padding: 10px;
 }
+
 figure {
     background: white;
     border-radius: 15px;
     margin: 10px 5% 10px 5%;
 }
+
 .item-anuncio {
     color: darkgrey;
     margin-top: 5px;
     font-size: 18px;
     font-weight: lighter;
 }
+
 .item-preco {
     color: blue;
     font-weight: 900;
@@ -81,22 +82,26 @@ footer {
     display: block;
     background: blue;
     width: 100%;
-    height: 10%;
+    height: 100px
 }
 
-
-@media ( min-width: 950px ) {
+@media ( min-width: 950px) {
     .container {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 80%;
+        height: 100%;
     }
     figure {
         background: white;
         border-radius: 15px;
         margin: 10px auto 10px auto;
+        height: 500px;
     }
-
+    footer {
+        display: block;
+        background: blue;
+        width: 100%;
+        height: 100px;
+    }
 }
-
